@@ -17,7 +17,7 @@ This repository contains a simple antivirus prototype implementing recursive sca
 - **Report Generation**: JSON report with totals and per-file actions.
 - **Real-time Scanner** (Bonus): Uses `watchdog` to monitor a folder for new files.
 
-## Quick Start
+## Quick Start/ Usage
 
 Quarantine on detection:
 python antivirus.py --path /path/to/scan --action quarantine --quarantine-dir ./quarantine --signatures ./signatures.json --report ./report.json

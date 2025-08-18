@@ -1,0 +1,13 @@
+{
+  "patterns": [
+    "eval\\s*\\(",
+    "exec\\s*\\(",
+    "subprocess\\s*\\.\\s*Popen",
+    "powershell",
+    "from\\s+base64\\s+import\\s+b64decode",
+    "base64\\s*\\.\\s*b64decode"
+  ],
+  "hashes": [
+    "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  ]
+}

